@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+}
+.bg{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/128/607/original/a-boy-using-phone-active-on-social-apps-free-vector.jpg);
+    background-size: cover;
+    height: 100vh;
+    flex: 1;
+}
+.contain {
+    flex: 1;
+    height: 100vh;
+    background-color: #f9ba6d;
+}
+.list {
+    width: 40vw;
+    margin-left: 3vw;
+}
+Button{
+    margin: 0.3rem;
+}

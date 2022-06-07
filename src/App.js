@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Dashboard } from '@mui/icons-material';
+import React from 'react'
+import {Route,Routes} from 'react-router-dom'
 
-function App() {
+
+//Pages
+import Login from './pages/login/login';
+import Detail from './pages/detail posting/detail';
+import Dashboard from './pages/dashboard/dashboard';
+import Profile from './pages/detail profile/profile';
+
+class App extends React.Component{
+render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route>
+          <Route path="/" element={<Login/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/detail" element={<Detail/>} />
+          <Route path="/profile" element={<Profile/>} />
+        </Route>
+      </Routes>
     </div>
-  );
+  )
+}
 }
 
 export default App;
